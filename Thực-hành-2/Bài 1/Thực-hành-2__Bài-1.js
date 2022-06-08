@@ -1,13 +1,9 @@
 function cal() {
     let a = +document.getElementById('a').value;
     let b = +document.getElementById('b').value;
-    let c = a % b;
+    let c = a * b;
     console.log(c);
-    if ( c == 0){
-        alert(" a chia hết cho b");
-    }else{
-        alert("a không chia hết cho b");
-    }
+    document.getElementById('result').innerHTML = " Kết quả: Diện tích hình chữ nhật là " + c;
 
 
 
